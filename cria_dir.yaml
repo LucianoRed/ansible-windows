@@ -2,5 +2,5 @@
   tasks:
   - name: Create directory structure
     win_file:
-      path: C:\Temp\folder\subfolder
+      path: C:\Temp\cassi\exemplo
       state: directory
