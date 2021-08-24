@@ -1,0 +1,6 @@
+- hosts: ec2-18-231-51-158.sa-east-1.compute.amazonaws.com
+  tasks:
+  - name: Create directory structure
+    ansible.windows.win_file:
+      path: C:\Temp\folder\subfolder
+      state: directory
