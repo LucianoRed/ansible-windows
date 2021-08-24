@@ -1,0 +1,10 @@
+---
+- name: Cria um arquivo em \temp
+  hosts: windows
+  gather_facts: False
+
+  tasks:
+    - name: Cria um arquivo em \temp baseado em um template
+      template:
+       src: teste.j2
+       dest: "\\temp\\teste.txt"
